@@ -1,0 +1,72 @@
+/* Basic reset for the body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', serif;
+  background-color: white; /* White background */
+  color: #000000;
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  background-color: #ffffff; /* Header background color */
+  padding: 20px 0;
+}
+
+.logo {
+  width: 400px; /* Adjust logo size as needed */
+}
+
+.main-container {
+  display: flex; /* Flex layout for two sections */
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  padding: 0; /* Remove padding */
+  height: calc(100vh - 70px); /* Full height minus header */
+}
+
+.image-section {
+  flex: 1; /* Take up half of the available space */
+  padding: 60px; /* Internal padding */
+  display: flex; /* Center the image */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.image {
+  width: 100%; /* Make image fill the entire section */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional rounded corners */
+}
+
+.text-section {
+  flex: 1; /* Take up the other half of the available space */
+  padding: 60px; /* Add padding for text */
+  text-align: left; /* Align text to the left */
+}
+
+.text-section h2 {
+  margin-top: 0; /* Remove top margin for headings */
+}
+
+.text-section p {
+  font-size: 2.4rem;
+  color: #000000; /* Set paragraph text color */
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.8s step-end infinite; /* Blinking animation */
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
